@@ -277,40 +277,63 @@ nav.secondary-nav a:hover {
     background: linear-gradient(to bottom, #068ad1 1%, #004a7c 41%, #004a7c 100%);
 }
 
-/* Responsive Design */
+/* Adjusting the flex properties for smaller screens */
 @media (max-width: 768px) {
-    nav .container {
+    nav .container, .donoNavKebich, .card-container {
         flex-direction: column;
-        gap: 5px;
+        align-items: center;
+        gap: 10px; /* Added some spacing */
     }
 
-    .donoNavKebich {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        padding: 10px;
+    nav.primary-nav .container, nav.secondary-nav .container {
+        justify-content: center;
     }
 
-    .text-next-to-image p {
-        margin-right: 0;
-        text-align: center;
-        width: 100%;
-        margin-top: 10px;
+    .primary-nav a, .secondary-nav a {
+        padding: 10px; /* Increase touch target size */
+        font-size: 14px; /* Slightly bigger text for smaller screens */
+    }
+
+    /* Adjusting the card sizes */
+    .card {
+        width: 90%; /* Take most of the width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .img {
+        margin-left: 0; /* Center the image */
     }
 
     .carousel-bottom-line {
-        height: 3px;
-        margin-top: 15px;
+        height: 5px; /* Thinner line */
+    }
+}
+
+/* Reducing margins and spacing for mobile */
+@media (max-width: 480px) {
+    .parivahan-logo, .g20-logo {
+        max-width: 80px; /* Smaller logos for small screens */
     }
 
-    .card-container {
-        justify-content: center;
-        gap: 15px;
+    .left-section, .right-section {
+        flex-direction: column;
     }
 
-    .card {
-        width: 100%;
-        max-width: 320px;
-        height: auto;
+    .text-next-to-image p {
+        font-size: 12px; /* Smaller text */
+    }
+
+    .input {
+        font-size: 14px; /* Smaller input text */
+        padding: 0 0.5rem; /* Less padding */
+    }
+
+    .input:focus, .input:hover {
+        box-shadow: 0 0 0 2px rgb(234 76 137 / 10%);
+    }
+
+    .btn-blue {
+        font-size: 12px; /* Smaller buttons */
+        padding: 10px 8px;
     }
 }
