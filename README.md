@@ -33,13 +33,10 @@ To view or modify this project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/YourUsername/Clones.git
+   git clone https://github.com/MustafaPinjari/Parivahan.git
    ```
-2. **Navigate to the Project Directory**:
-   ```bash
-   cd Clones
-   ```
-3. **Open `index.html` in Your Browser**: Simply open the `index.html` file in any modern web browser to view the project.
+
+2. **Open `index.html` in Your Browser**: Simply open the `index.html` file in any modern web browser to view the project.
 
 ## 📚 Usage
 
