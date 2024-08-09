@@ -1,0 +1,300 @@
+/* Reset margin and padding for body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content from the top */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Primary Navigation */
+nav.primary-nav {
+    background-color: #124DAC;
+    height: 50px;
+    width: 100%;
+    padding: 10px 0; /* Padding for top and bottom */
+    position: relative; /* Positioning for containing absolute elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow */
+}
+
+/* Primary Navigation Links */
+nav.primary-nav a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 4px; /* Reduced padding to decrease space */
+    margin: 0 4px; /* Added margin to ensure spacing is controlled */
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+nav.primary-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+nav.primary-nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px; /* Adjust gap between items */
+}
+
+/* Search Bar */
+.group {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    position: relative;
+    max-width: 190px; /* Maximum width of the search bar */
+    height: 40px; /* Adjusted height to match input field */
+}
+
+.input {
+    width: 100%;
+    height: 30px; /* Set the height of the input field */
+    line-height: 30px; /* Adjust line-height to match input field height */
+    padding: 0 1rem;
+    padding-left: 2.5rem; /* Space for the icon */
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+
+.input::placeholder {
+    color: #9e9ea7;
+}
+
+.input:focus, .input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 20px; /* Adjust width of the icon */
+    height: 20px; /* Adjust height of the icon */
+}
+
+/* Main Logo and Text Section */
+.donoNavKebich {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff; /* Background color for contrast */
+}
+
+/* Left Section Styling */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.parivahan-logo {
+    max-width: 150px; /* Max width for the image */
+}
+
+.divider {
+    width: 1px; /* Width of the divider line */
+    height: 50px; /* Height of the divider line */
+    background-color: #000000; /* Color of the divider line */
+    margin: 0 20px; /* Margin around the divider line */
+}
+
+.text-next-to-image p {
+    margin: 0;
+    font-size: 16px; /* Font size */
+    color: #000000; /* Text color */
+    margin-right: 20px; /* Adjusted space between image and text */
+}
+
+/* Right Section Styling */
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.g20-logo {
+    max-width: 100px; /* Max width for the G20 logo */
+}
+
+/* Secondary Navbar Styling */
+nav.secondary-nav {
+    background: -webkit-linear-gradient(top, #005183, #01263c);
+    width: 100%;
+    padding: 8px 0; /* Reduced padding to decrease the navbar height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    margin-bottom: 10px; /* Space below the secondary navbar */
+    overflow: hidden; /* Ensures children don't affect navbar height */
+}
+
+/* Container Flexbox Styling for Secondary Navbar */
+nav.secondary-nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 8px; /* Reduced gap between items */
+}
+
+/* Navbar Font and Spacing Adjustments */
+.Dusranavbar {
+    width: 100%;
+    font-size: 8px; /* Overall font size reduction */
+}
+
+nav.secondary-nav a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 2px; /* Further reduced padding */
+    margin: 0 4px; /* Maintained margin for spacing */
+    font-size: 14px; /* Reduced font size for single-line fit */
+    transition: background-color 0.3s;
+}
+
+nav.secondary-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Divider Styling for Secondary Navbar */
+.dividerDusraNavWala {
+    width: 1px; /* Maintained width of the divider line */
+    height: 30px; /* Increased height for better visual presence */
+    background-color: #ffffff; /* Divider line color */
+    margin: 0 6px; /* Reduced margin for closer spacing */
+    align-self: center; /* Aligns divider to the center of the navbar */
+}
+
+/* Carousel Bottom Line */
+.carousel-bottom-line {
+    width: 100%; /* Width of the divider */
+    height: 10px; /* Thickness of the divider */
+    background-color: #123ADC; /* Color of the divider */
+    margin: 20px 0; /* Adds space above and below the divider */
+}
+
+/* License Service Section */
+.license-service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0; /* Ensure it appears below the line */
+    margin-top: 30px; /* Space from the line above */
+}
+.content-container {
+    text-align: center;
+}
+
+/* Container for Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    width: 250px; /* Fixed width for cards */
+    height: 300px; /* Adjusted height to match image */
+    text-align: center;
+    padding: 10px; /* Adjust padding */
+    box-shadow: 3 5px 4px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    position: relative;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Card Hover Effect */
+.card:hover {
+    border-color: #005183; /* Blue border on hover */
+}
+
+/* Card Image */
+.img {
+    background-size: cover; /* Ensure image covers the area without distortion */
+    background-position: center; /* Center the image within the element */
+    height: 100px; /* Set a fixed height for the image */
+    width: 100px; /* Set fixed width for the image */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the image */
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin-left: 50px;
+}
+
+/* Job Title Styling */
+.job {
+    color: #555; /* Dark gray color for the job title */
+    margin: 5px 0;
+    
+}
+
+/* Button Styling */
+.btn-blue {
+    background: linear-gradient(to bottom, #4acbf9 1%, #068ad1 41%, #068ad1 100%);
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+.btn-blue:hover {
+    background: linear-gradient(to bottom, #068ad1 1%, #004a7c 41%, #004a7c 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        gap: 5px; /* Adjust gap for smaller screens */
+    }
+
+    .donoNavKebich {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text-next-to-image p {
+        margin-right: 0; /* Reset margin on smaller screens */
+    }
+
+    .content {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .carousel-bottom-line {
+        height: 3px; /* Adjust height for smaller screens if needed */
+        margin-top: 15px; /* Adjust margin for smaller screens */
+    }
+}
